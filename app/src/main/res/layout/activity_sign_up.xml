@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Activity.SignUpActivity">
+
+    <TextView
+        android:textSize="30sp"
+        android:textColor="#006a4e"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#FFF8B2"
+                android:id="@+id/cardView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:layout_margin="20dp"
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Full Name">
+
+                    </EditText>
+
+                    <EditText
+                        android:inputType="number"
+                        android:layout_margin="20dp"
+                        android:id="@+id/contactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Contact No.">
+
+                    </EditText>
+
+                    <EditText
+                        android:inputType="number"
+                        android:layout_margin="20dp"
+                        android:id="@+id/nidno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter NID no.">
+
+                    </EditText>
+
+                    <EditText
+                        android:layout_margin="20dp"
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter E-mail Address">
+
+                    </EditText>
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ProgressBar>
+
+                    <EditText
+                        android:inputType="textPassword"
+                        android:layout_margin="20dp"
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Password">
+
+                    </EditText>
+
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#000"
+                                android:textSize="18dp"
+                                android:text="Select District: "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/districtSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#000"
+                                android:textSize="18dp"
+                                android:text="Select Upazila: "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/upazilaSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#000"
+                                android:textSize="18dp"
+                                android:text="Select Union: "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/unionSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:background="@drawable/button_ripple"
+                        android:layout_margin="20dp"
+                        android:text="Sign Up"
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="upazilaList">
+        <item>Select Upazila</item>
+        <item>Dhamrai</item>
+        <item>Dohar</item>
+        <item>Keraniganj</item>
+        <item>Nawabganj</item>
+        <item>Savar</item>
+        <item>Tejgaon</item>
+    </string-array>
+</resources>

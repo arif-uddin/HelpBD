@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unionList">
+        <item>Select Union</item>
+        <item>Narisha</item>
+        <item>Nayabari</item>
+        <item>Raipara</item>
+        <item>Sarulia</item>
+        <item>Beraid</item>
+        <item>Manda</item>
+        <item>Ashulia</item>
+        <item>Bangaon</item>
+        <item>Aminbazar</item>
+        <item>Agla</item>
+        <item>Bakshnagar</item>
+        <item>Bandura</item>
+        <item>Aganagar</item>
+        <item>Basta</item>
+        <item>Hazratpur</item>
+        <item>Amta</item>
+        <item>Jadabpur</item>
+        <item>Balia</item>
+    </string-array>
+</resources>

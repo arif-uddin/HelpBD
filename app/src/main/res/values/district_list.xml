@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="districtList">
+        <item>Select District</item>
+        <item>Dhaka</item>
+    </string-array>
+</resources>
